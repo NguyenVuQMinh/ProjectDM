@@ -1,0 +1,28 @@
+﻿loai,tap_muc,ve_trai,ve_phai,support,confidence,lift
+tap_pho_bien,bắp rang,,,0.215,,
+tap_pho_bien,coca-cola,,,0.255,,
+tap_pho_bien,combo 1,,,0.18,,
+tap_pho_bien,combo 2,,,0.28,,
+tap_pho_bien,combo family,,,0.215,,
+tap_pho_bien,nachos,,,0.21,,
+tap_pho_bien,trà đào,,,0.14,,
+tap_pho_bien,vé 2d,,,0.605,,
+tap_pho_bien,vé 3d,,,0.22,,
+tap_pho_bien,vé imax,,,0.17,,
+tap_pho_bien,xúc xích,,,0.115,,
+tap_pho_bien,"bắp rang, coca-cola",,,0.15,,
+tap_pho_bien,"bắp rang, vé 2d",,,0.135,,
+tap_pho_bien,"coca-cola, vé 2d",,,0.155,,
+tap_pho_bien,"combo 1, vé 2d",,,0.125,,
+tap_pho_bien,"combo 2, vé 2d",,,0.135,,
+tap_pho_bien,"combo 2, vé imax",,,0.12,,
+tap_pho_bien,"combo family, vé 2d",,,0.13,,
+tap_pho_bien,"nachos, vé 2d",,,0.105,,
+luat_ket_hop,,coca-cola,bắp rang,0.15,0.5882,2.736
+luat_ket_hop,,bắp rang,coca-cola,0.15,0.6977,2.736
+luat_ket_hop,,bắp rang,vé 2d,0.135,0.6279,1.0379
+luat_ket_hop,,coca-cola,vé 2d,0.155,0.6078,1.0047
+luat_ket_hop,,combo 1,vé 2d,0.125,0.6944,1.1478
+luat_ket_hop,,vé imax,combo 2,0.12,0.7059,2.521
+luat_ket_hop,,combo family,vé 2d,0.13,0.6047,0.9994
+luat_ket_hop,,nachos,vé 2d,0.105,0.5,0.8264
