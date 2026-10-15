@@ -7,7 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 
-DATA_FILE = Path(__file__).resolve().parent.parent / "Data" / "cleaned_transactions.csv"
+DATA_FILE = Path(__file__).resolve().parent.parent / "Data" / "basket_data.csv"
 RESULT_FILE = Path(__file__).resolve().parent.parent / "result" / "fpgrowth_result.csv"
 MIN_SUPPORT = 0.1
 MIN_CONFIDENCE = 0.5
@@ -24,7 +24,13 @@ class Node:
 
 def doc_giao_dich():
     with DATA_FILE.open(encoding="utf-8-sig", newline="") as file:
-        return [set(ast.literal_eval(row["Items"])) for row in csv.DictReader(file)]
+        giao_dich = [set(ast.literal_eval(row["Items"])) for row in csv.DictReader(file)]
+    print(f"So giao dich: {len(giao_dich)}")
+    assert len(giao_dich) == 165, (
+        f"Loi: doc {len(giao_dich)} giao dich, khong phai 165. "
+        f"Hay kiem tra file {DATA_FILE}"
+    )
+    return giao_dich
 
 
 def tao_cay(giao_dich, min_count):

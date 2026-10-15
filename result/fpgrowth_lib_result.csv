@@ -1,28 +1,35 @@
 ﻿loai,tap_muc,ve_trai,ve_phai,support,confidence,lift
-tap_pho_bien,vé 2d,,,0.605,,
-tap_pho_bien,coca-cola,,,0.255,,
-tap_pho_bien,combo family,,,0.215,,
-tap_pho_bien,nachos,,,0.21,,
-tap_pho_bien,combo 2,,,0.28,,
-tap_pho_bien,trà đào,,,0.14,,
-tap_pho_bien,vé 3d,,,0.22,,
-tap_pho_bien,combo 1,,,0.18,,
-tap_pho_bien,vé imax,,,0.17,,
-tap_pho_bien,bắp rang,,,0.215,,
-tap_pho_bien,xúc xích,,,0.115,,
-tap_pho_bien,"coca-cola, vé 2d",,,0.155,,
-tap_pho_bien,"combo family, vé 2d",,,0.13,,
-tap_pho_bien,"nachos, vé 2d",,,0.105,,
-tap_pho_bien,"combo 2, vé 2d",,,0.135,,
-tap_pho_bien,"combo 1, vé 2d",,,0.125,,
-tap_pho_bien,"combo 2, vé imax",,,0.12,,
-tap_pho_bien,"bắp rang, coca-cola",,,0.15,,
-tap_pho_bien,"bắp rang, vé 2d",,,0.135,,
-luat_ket_hop,,coca-cola,vé 2d,0.155,0.6078,1.0047
-luat_ket_hop,,combo family,vé 2d,0.13,0.6047,0.9994
-luat_ket_hop,,nachos,vé 2d,0.105,0.5,0.8264
-luat_ket_hop,,combo 1,vé 2d,0.125,0.6944,1.1478
-luat_ket_hop,,vé imax,combo 2,0.12,0.7059,2.521
-luat_ket_hop,,coca-cola,bắp rang,0.15,0.5882,2.736
-luat_ket_hop,,bắp rang,coca-cola,0.15,0.6977,2.736
-luat_ket_hop,,bắp rang,vé 2d,0.135,0.6279,1.0379
+tap_pho_bien,vé 2d,,,0.5818,,
+tap_pho_bien,coca-cola,,,0.3091,,
+tap_pho_bien,combo family,,,0.2606,,
+tap_pho_bien,nachos,,,0.2545,,
+tap_pho_bien,combo 2,,,0.3394,,
+tap_pho_bien,trà đào,,,0.1697,,
+tap_pho_bien,vé 3d,,,0.2242,,
+tap_pho_bien,combo 1,,,0.2182,,
+tap_pho_bien,vé imax,,,0.1939,,
+tap_pho_bien,pepsi,,,0.1152,,
+tap_pho_bien,bắp rang,,,0.2606,,
+tap_pho_bien,xúc xích,,,0.1394,,
+tap_pho_bien,nước suối,,,0.103,,
+tap_pho_bien,"coca-cola, vé 2d",,,0.1879,,
+tap_pho_bien,"combo family, vé 2d",,,0.1576,,
+tap_pho_bien,"nachos, vé 2d",,,0.1273,,
+tap_pho_bien,"combo 2, nachos",,,0.103,,
+tap_pho_bien,"combo 2, vé 2d",,,0.1636,,
+tap_pho_bien,"combo 1, vé 2d",,,0.1515,,
+tap_pho_bien,"combo 2, vé imax",,,0.1455,,
+tap_pho_bien,"bắp rang, coca-cola",,,0.1818,,
+tap_pho_bien,"bắp rang, vé 2d",,,0.1636,,
+tap_pho_bien,"bắp rang, coca-cola, vé 2d",,,0.1152,,
+luat_ket_hop,,coca-cola,vé 2d,0.1879,0.6078,1.0447
+luat_ket_hop,,combo family,vé 2d,0.1576,0.6047,1.0392
+luat_ket_hop,,nachos,vé 2d,0.1273,0.5,0.8594
+luat_ket_hop,,combo 1,vé 2d,0.1515,0.6944,1.1936
+luat_ket_hop,,vé imax,combo 2,0.1455,0.75,2.2098
+luat_ket_hop,,bắp rang,coca-cola,0.1818,0.6977,2.2572
+luat_ket_hop,,coca-cola,bắp rang,0.1818,0.5882,2.2572
+luat_ket_hop,,bắp rang,vé 2d,0.1636,0.6279,1.0792
+luat_ket_hop,,"bắp rang, vé 2d",coca-cola,0.1152,0.7037,2.2767
+luat_ket_hop,,"coca-cola, vé 2d",bắp rang,0.1152,0.6129,2.3518
+luat_ket_hop,,"bắp rang, coca-cola",vé 2d,0.1152,0.6333,1.0885

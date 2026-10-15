@@ -10,7 +10,7 @@ from mlxtend.preprocessing import TransactionEncoder
 
 
 # Đường dẫn được tính từ vị trí file nên chạy được ở mọi thư mục.
-DATA_FILE = Path(__file__).resolve().parent.parent / "Data" / "cleaned_transactions.csv"
+DATA_FILE = Path(__file__).resolve().parent.parent / "Data" / "basket_data.csv"
 RESULT_FILE = Path(__file__).resolve().parent.parent / "result" / "apriori_lib_result.csv"
 MIN_SUPPORT = 0.1
 MIN_CONFIDENCE = 0.5
@@ -23,7 +23,13 @@ if hasattr(sys.stdout, "reconfigure"):
 def doc_giao_dich(file_path):
     """Đọc cột Items và chuyển mỗi dòng thành một danh sách mặt hàng."""
     data = pd.read_csv(file_path)
-    return data["Items"].apply(ast.literal_eval).tolist()
+    transactions = data["Items"].apply(ast.literal_eval).tolist()
+    print(f"So giao dich: {len(transactions)}")
+    assert len(transactions) == 165, (
+        f"Loi: doc {len(transactions)} giao dich, khong phai 165. "
+        f"Hay kiem tra file {file_path}"
+    )
+    return transactions
 
 
 def tim_luat_apriori(transactions):

@@ -9,7 +9,7 @@ from mlxtend.frequent_patterns import fpgrowth, association_rules
 from mlxtend.preprocessing import TransactionEncoder
 
 
-DATA_FILE = Path(__file__).resolve().parent.parent / "Data" / "cleaned_transactions.csv"
+DATA_FILE = Path(__file__).resolve().parent.parent / "Data" / "basket_data.csv"
 RESULT_FILE = Path(__file__).resolve().parent.parent / "result" / "fpgrowth_lib_result.csv"
 MIN_SUPPORT = 0.1
 MIN_CONFIDENCE = 0.5
@@ -21,7 +21,13 @@ if hasattr(sys.stdout, "reconfigure"):
 
 def doc_giao_dich(file_path):
     data = pd.read_csv(file_path)
-    return data["Items"].apply(ast.literal_eval).tolist()
+    transactions = data["Items"].apply(ast.literal_eval).tolist()
+    print(f"So giao dich: {len(transactions)}")
+    assert len(transactions) == 165, (
+        f"Loi: doc {len(transactions)} giao dich, khong phai 165. "
+        f"Hay kiem tra file {file_path}"
+    )
+    return transactions
 
 
 def tim_luat_fpgrowth(transactions):
